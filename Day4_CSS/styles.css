@@ -1,0 +1,167 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: red;
+}
+
+#t1 {
+    color: black;
+}
+
+.title {
+    color: green;
+}
+
+h1 {
+    color: blue;
+}
+
+p{
+    background-color: aqua;
+}
+
+.para.text{
+    background-color: pink;
+}
+
+p.para{
+    background-color: grey;
+}
+
+.para{
+    background-color: yellow;
+}
+ */
+
+ /* --------------COMBINATORS------------ */
+
+ /* div p{
+    color: blue;
+} */
+
+/* div>p{
+    text-align: center;
+    background-color: yellow;
+    color: brown;
+} */
+
+/* section{
+    color: brown;
+} */
+
+/* p+div{
+    background-color: aqua;
+}
+
+div+p{
+    background-color: orange;
+}
+
+div+div>section>p{
+    color: red;
+} */
+
+/* p+p+p{
+    color: green;
+} */
+
+/* ----------- PSEUDO Classes ------------- */
+
+/* p:hover{
+    background-color: burlywood;
+}
+a:visited{
+    color: green;
+} */
+
+
+/* button{
+    border: none;
+    padding: 8px 19px;
+    background-color: #04AA6D;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px; */
+    /* box-shadow: 0px 0px 6px 6px rgba(255, 0, 0, 0.486);  */
+    /* box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    transition: all 700ms ease;
+}
+
+button:hover{
+    background-color: #21835f;
+    scale: 1.2;
+}
+
+button:active{
+    scale: 0.9; 
+}*/
+
+/*------------- Pseudo Classes ---------------- --> */
+
+/* div{
+    padding: 12px;
+    border: 2px solid grey;
+} */
+
+/* li:first-child{
+    background-color: yellow;
+}
+
+p:nth-child(2){
+    background-color: red;
+} */
+
+/* this does not work */
+/* p:nth-child(3){
+    background-color: aqua;
+} */
+
+ /* this works  */
+/* li:nth-child(3){
+    background-color: aqua;
+}
+
+p:first-of-type{
+    background-color: violet;
+} */
+
+/* div li:nth-child(5){
+    background-color: lightsalmon;
+} */
+
+
+/* a:link{
+    color: green;
+} */
+
+/* -------------- FLEX BOX ----------------------- */
+
+.parent>div{
+    font-size: 24px;
+    background-color: blanchedalmond;
+    border: 1px solid grey;
+}
+
+.parent{
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    align-items: baseline;
+    gap: 10px;
+    height: 400px;
+    background-color: chartreuse;
+}
+
+.child1,.child2,.child4{
+    /* flex-shrink: 1;
+    width: 300px; */
+    height: 200px;
+}
+
+.child3{
+    /* flex-shrink: 2;
+    flex-grow: 1; */
+    padding: 24px;
+    height: 100px;
+}
