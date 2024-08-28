@@ -22,12 +22,29 @@ nav{
     display: flex;
     padding: 16px;
     gap: 16px;
+    width: 100vw;
+
+    position: absolute;
+    top: 450px;
+    left: 0;
 }
 
 .cards{
-    border: 1px solid grey;
-    height: 200px;
+    /* border: 1px solid grey; */
+    /* height: 200px; */
     flex-grow: 1;
     padding: 16px;
     flex-basis: 100px;
+    background-color: rgb(216, 203, 203);
+}
+
+.card-child-parent{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.small-img-t2{
+    width: 100%;
 }
