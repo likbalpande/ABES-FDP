@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>JS DOM</title>
+</head>
+
+<body>
+    <!-- form validation -->
+    <form>
+        <label for="usn">Name</label>
+        <input onkeyup="handleNameKeyUp(event)" onkeydown="handleNameKeyDown(event)" onchange="handleNameChange(event)"
+            type="text" placeholder="user-name" id="usn" name="username" required />
+        <br><br>
+        <label for="eml">Email</label>
+        <input type="email" placeholder="user-email" id="eml" name="email" required>
+        <br><br>
+        <label for="pswd">Password</label>
+        <input type="password" placeholder="user-password" id="pswd" name="password" required>
+        <br><br>
+        <button>Submit</button>
+        <br>
+        <button>Reset</button>
+    </form>
+    <script src="./script.js"></script>
+</body>
+
+</html>
