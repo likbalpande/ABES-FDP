@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>JS DOM</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
     <!-- form validation -->
-    <form>
+    <form id="form">
         <label for="usn">Name</label>
         <input onkeyup="handleNameKeyUp(event)" onkeydown="handleNameKeyDown(event)" onchange="handleNameChange(event)"
             type="text" placeholder="user-name" id="usn" name="username" required />
@@ -24,6 +25,11 @@
         <br>
         <button>Reset</button>
     </form>
+    <div id="card">
+        <h1>ID Card</h1>
+        <h2 id="id-card-name">Name: </h2>
+        <h2>Email: </h2>
+    </div>
     <script src="./script.js"></script>
 </body>
 
