@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card UI</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="parent">
+        <form>
+            <label>Name:</label>
+            <input type="text" onkeyup="handleName(event)" name="username">
+            <label>Employee Code:</label>
+            <input type="text" onkeyup="handleCode(event)">
+            <label>Profile Picture</label>
+            <input type="file" onchange="handleFile(event)">
+        </form>
+        <div>
+            <h1>ID Card</h1>
+            <h3 id="card-name">
+                Name:
+            </h3>
+            <h3 id="card-code">
+                Emp. Code:
+            </h3>
+            <img width="200" alt="profile photo" id="card-img" />
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
