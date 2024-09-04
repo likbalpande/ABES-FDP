@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Individual EVENT handling of FORM ELEMENTS -->
+
+    <!-- <h1>Events</h1>
+    <form>
+        <label>E-mail</label>
+        <input type="email" onchange="validateEmail(event)"><br><br>
+        <label>Roll Number</label>
+        <input type="number" onchange="validateRoll(event)"><br><br>
+    </form> -->
+
+    <!-- FORM handling on submit -->
+    <h1>Events</h1>
+    <form onsubmit="handleForm(event)">
+        <label>E-mail</label>
+        <input type="email"><br><br>
+        <label>Roll Number</label>
+        <input type="number"><br><br>
+        <button>Submit</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
