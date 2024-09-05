@@ -26,23 +26,17 @@
 // printOnScreen(res);
 
 // -----------------------
-// console.log("Start");
 // function printOnScreen(x) {
 //     console.log("-->", x);
 // }
 // function sum(a, b, cb) {
-//     console.log("Inside SUM...");
 //     const ans = a + b;
-//     console.log("Calculation Done");
 //     cb(ans);
-//     console.log("Sum Function completed");
 // }
 // const i1 = 10;
 // const i2 = 40;
 // // inversion of control
-// console.log("Calling SUM...");
 // sum(10, 40, printOnScreen);
-// console.log("END");
 
 // ---------------------------------
 
@@ -127,17 +121,17 @@
 // console.log(res2);
 
 // ------------------------------ PRACTICE
-input = ["ABC", "CD", "DE", "EF", "JKX", "HI", "MN", "IO"];
-// output = ["ABC", "DE", "EF", "HI", "IO"];
+// input = ["ABC", "CD", "DE", "EF", "JKX", "HI", "MN", "IO"];
+// // output = ["ABC", "DE", "EF", "HI", "IO"];
 
-function cb(elem) {
-    for (ch of elem) {
-        if (ch == "A" || ch == "E" || ch == "I") {
-            return true;
-        }
-    }
-    return false;
-}
+// function cb(elem) {
+//     for (ch of elem) {
+//         if (ch == "A" || ch == "E" || ch == "I") {
+//             return true;
+//         }
+//     }
+//     return false;
+// }
 
-const res = input.filter(cb);
-console.log(res);
+// const res = input.filter(cb);
+// console.log(res);
