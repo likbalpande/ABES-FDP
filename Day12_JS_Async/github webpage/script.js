@@ -24,3 +24,26 @@ function display(data) {
     image.setAttribute("class", "card-img");
     parent.appendChild(image);
 }
+
+// implement the function "makeObj" which take the input as 2D array
+// and returns the object from it
+
+// example:
+//         const RES = makeObj([
+//                              ['name', 'Lik'],['city', 'Delhi'],['CPI': 9.0]
+//                            ])
+// here the RES object will look like this:
+// {
+//     name: 'Lik',
+//     city: 'Delhi',
+//     CPI: 9.0
+// }
+
+// --------------------------------------------------------------
+
+// implement the function "totalPriceOfGoodProducts"
+// it calls the API --> https://dummyjson.com/products
+// get the json from the response
+// get the products from the json
+// calculate the sum of prices of products with rating >= 4.0
+// return the sum

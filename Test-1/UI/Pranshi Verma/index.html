@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Bulb Control</title>
+    <link rel="stylesheet" href="./Style.CSS">
+</head>
+
+<body>
+    <div id="main">
+        <button id="startBtn">START</button>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h3>Custom Lighting</h3>
+            <input type="number" id="numBulbs" min="1" placeholder="Enter number of bulbs">
+            <button id="doneBtn">Done</button>
+        </div>
+    </div>
+
+    <!-- Container for Light Bulbs -->
+    <div id="bulbsContainer" class="hidden">
+        <div id="bulbs"></div>
+        <button id="resetBtn">Reset</button>
+    </div>
+
+    <script src="./Script.js"></script>
+</body>
+
+</html>
