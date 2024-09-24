@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    background-color: black;
+    color: cyan;
+}
+.info-card {
+    padding: 16px;
+    margin: 20px auto;
+    background-color: burlywood;
+    width: 300px;
+}
