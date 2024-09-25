@@ -3,13 +3,21 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 .navbar {
-    background-color: black;
-    color: cyan;
-}
-.info-card {
     padding: 16px;
-    margin: 20px auto;
-    background-color: burlywood;
-    width: 300px;
+    background-color: black;
+    color: white;
+    height: 10vh;
+}
+
+.footer {
+    padding: 16px;
+    background-color: grey;
+    color: white;
+    height: 10vh;
+}
+
+.home-body {
+    min-height: 80vh;
 }

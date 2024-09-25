@@ -157,16 +157,16 @@
 // console.log(name);
 
 // -----------------------------------------
-import React from "react";
-import ReactDOM from "react-dom/client";
+// import React from "react";
+// import ReactDOM from "react-dom/client";
 
-const parent = document.getElementById("root");
-const root = ReactDOM.createRoot(parent);
+// const parent = document.getElementById("root");
+// const root = ReactDOM.createRoot(parent);
 
-const Navbar = () => {
-    const companyName = "Programming Pathshala";
-    return <div className="navbar">{companyName}</div>;
-};
+// const Navbar = () => {
+//     const companyName = "Programming Pathshala";
+//     return <div className="navbar">{companyName}</div>;
+// };
 
 // const Card = (properties) => {
 //     const { name, city } = properties;
@@ -178,22 +178,68 @@ const Navbar = () => {
 //     );
 // };
 
-const Card = ({ name, city }) => {
-    return (
-        <div className="info-card">
-            <h4>Name: {name}</h4>
-            <h5>City: {city}</h5>
-        </div>
-    );
-};
+// const Card = ({ name, city }) => {
+//     return (
+//         <div className="info-card">
+//             <h4>Name: {name}</h4>
+//             <h5>City: {city}</h5>
+//         </div>
+//     );
+// };
+
+// const App = () => {
+//     return (
+//         <div>
+//             <Navbar />
+//             <Card name="Ajay" city="Jaipur" />
+//         </div>
+//     );
+// };
+
+// root.render(<App />);
+
+// ------------------ DAY 16 -----------------
+// ------------------ DAY 16 -----------------
+// ------------------ DAY 16 -----------------
+
+// import ReactDOM from "react-dom";
+// import Homepage from "./src/pages/homepage";
+
+// const parent = document.getElementById("root");
+// const root = ReactDOM.createRoot(parent);
+
+// const App = () => {
+//     return (
+//         <div>
+//             <Homepage />
+//         </div>
+//     );
+// };
+
+// root.render(<App />);
+
+// --------------- react-router-dom -----------------
+
+import ReactDOM from "react-dom";
+import Homepage from "./src/pages/homepage";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+const parent = document.getElementById("root");
+const root = ReactDOM.createRoot(parent);
+
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <Homepage />,
+    },
+    {
+        path: "/search",
+        element: <SearchPage />,
+    },
+]);
 
 const App = () => {
-    return (
-        <div>
-            <Navbar />
-            <Card name="Ajay" city="Jaipur" />
-        </div>
-    );
+    return <RouterProvider router={router} />;
 };
 
 root.render(<App />);
