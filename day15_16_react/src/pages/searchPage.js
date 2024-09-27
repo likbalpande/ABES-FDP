@@ -1,58 +1,35 @@
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const SearchPage = () => {
-    console.log("Start");
-    // let text = "ABES";
-    const [text, setText] = useState("ABES");
-    const [cnt, setCnt] = useState(0);
-    // let cnt = 0;
-    const handle = (e) => {
-        // text = e.target.value;
-        // cnt++;
-        setText(e.target.value);
-        // console.log(cnt);
-        // console.log(text);
+    const [arr, setArr] = useState([]);
+    const getData = () => {
+        const pr = fetch("https://dummyjson.com/users");
+        pr.then((res) => {
+            res.json().then((data) => {
+                setArr(data.users);
+                console.log(data.users);
+            });
+        }).catch(console.log);
     };
 
-    const increment = () => {
-        setCnt(cnt + 1);
-    };
+    useEffect(getData, []);
 
     return (
         <div>
             <Navbar />
             <div className="search-container">
-                {/* onkeydown="handle(event)" */}
-                <input type="text" onChange={handle} />
-                <button>Search</button>
+                <h2>{arr[0]?.firstName}</h2>
+                <h2>{arr[1]?.firstName}</h2>
                 <hr />
-                <h1>{text}</h1>
-                <button onClick={increment}>Click ME</button>
-                <h1>{cnt}</h1>
+                {arr.map((elem) => {
+                    return <h1>{elem.firstName}</h1>;
+                })}
             </div>
             <Footer />
         </div>
     );
 };
-
-// // const student = {
-// //   name: 'Ajay',
-// //   city: "Jaipur"
-// // }
-// // console.log(student.name)
-
-// // // destructuring
-// // key / name matters, postion does not matter
-// // const {name, age} = student;
-// // console.log(name, age);
-
-// const arr = ['Ajay', "Jaipur", "Hello", 'world', 'hi'];
-
-// // key / name does not matter, postion matters
-// const [a,b,c,d] = arr;
-
-// console.log(c, d)
 
 export default SearchPage;
