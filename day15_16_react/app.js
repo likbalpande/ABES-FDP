@@ -223,6 +223,7 @@
 import ReactDOM from "react-dom";
 import Homepage from "./src/pages/homepage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import SearchPage from "./src/pages/searchPage";
 
 const parent = document.getElementById("root");
 const root = ReactDOM.createRoot(parent);

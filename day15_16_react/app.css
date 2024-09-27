@@ -9,6 +9,14 @@
     background-color: black;
     color: white;
     height: 10vh;
+
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    a {
+        color: white;
+    }
 }
 
 .footer {
@@ -19,5 +27,10 @@
 }
 
 .home-body {
+    min-height: 80vh;
+}
+
+.search-container {
+    padding: 16px;
     min-height: 80vh;
 }
