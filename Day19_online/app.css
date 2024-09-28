@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.global-navbar {
+    background-color: #f7f7fa;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 8px 16px;
+}
+
+.global-navbar img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.dummy-div-1 {
+    padding: 16px;
+    width: fit-content;
+    background-color: antiquewhite;
+    margin: 16px auto;
+}
+
+.search-box {
+    background-color: yellow;
+    padding: 16px;
+    text-align: center;
+}
